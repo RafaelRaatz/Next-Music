@@ -1,15 +1,19 @@
-import { SiYoutubemusic } from "react-icons/si";
-import { AiOutlineSearch, AiOutlineHome, AiOutlineStar, AiOutlineHistory } from "react-icons/ai";
+import {
+  AiOutlineSearch,
+  AiOutlineHome,
+  AiOutlineStar,
+  AiOutlineHistory,
+} from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import { BsMusicNoteList } from "react-icons/bs";
 
 export const Header = () => {
   return (
-    <div className="h-24 bg-gray-800">
-      <div className="max-w-6xl m-auto pt-8 flex flex-row justify-between items-center">
+    <div className=" bg-gray-800">
+      <div className="max-w-6xl m-auto p-4 flex flex-row justify-between items-center">
         <div className="flex items-center text-white gap-2">
-          <SiYoutubemusic className="text-3xl" />
-          <h1 className="text-3xl">RAATZFY</h1>
+          <img src="./logo.png" alt="" className="w-8" />
+          <h1 className="text-xl">Music App</h1>
         </div>
 
         <div className="flex gap-4 text-white text-sm ">
@@ -18,15 +22,16 @@ export const Header = () => {
           </a>
           |
           <a className="hover:scale-105 hover:underline flex" href="">
-          <BsMusicNoteList className="mt-0.5 mr-1.5" />Playlist
+            <BsMusicNoteList className="mt-0.5 mr-1.5" />
+            Playlist
           </a>
           |
           <a className="hover:scale-105 hover:underline flex" href="">
-          <AiOutlineStar className="mt-0.5 mr-1.5" /> Favorite
+            <AiOutlineStar className="mt-0.5 mr-1.5" /> Favorite
           </a>
           |
           <a className="hover:scale-105 hover:underline flex" href="">
-          <AiOutlineHistory className="mt-0.5 mr-1.5"/> History
+            <AiOutlineHistory className="mt-0.5 mr-1.5" /> History
           </a>
         </div>
 

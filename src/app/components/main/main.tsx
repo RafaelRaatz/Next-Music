@@ -55,7 +55,12 @@ export function Main() {
   return (
     <div className="m-auto flex max-w-6xl flex-col mt-20 text-white">
       {musicsArtist.slice(1, visibleMain).map((music, key) => (
-        <MainCard key={key} name={music.artist.name} song={music.title} image={music.album.cover_xl} />
+        <MainCard
+          key={key}
+          name={music.artist.name}
+          song={music.title}
+          image={music.album.cover_xl}
+        />
       ))}
 
       <div className="mt-14 bg-gray-800 rounded-lg h-[32rem]">
@@ -64,8 +69,13 @@ export function Main() {
         </div>
 
         <div className="flex gap-4 ml-6">
-        {Artist.slice(0, visibleArtistMusic).map((music, key) => (
-          <LargeCard key={key} name={music.artist.name} song={music.title} image={music.album.cover_xl} />
+          {Artist.slice(0, visibleArtistMusic).map((music, key) => (
+            <LargeCard
+              key={key}
+              name={music.artist.name}
+              song={music.title}
+              image={music.album.cover_xl}
+            />
           ))}
         </div>
       </div>

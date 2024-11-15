@@ -1,6 +1,8 @@
-# music streaming challenge
+# next music streaming
 
-Projeto music streaming challenge criado em React.
+Este projeto é um site de streaming de musicas desenvolvido com Next.js. 
+A estilização foi feita com Tailwind CSS.
+O site consome dados de uma API para exibir uma lista de musicas e suas informações. 
 
 ## Iniciando Projeto
 

@@ -18,19 +18,18 @@ export function MainCard({ image, name, song }: IMusics) {
           className=" z-10 object-none w-full h-full rounded"
         />
 
-
         <h3 className="absolute z-20 w-40 text-base flex justify-center text-center mt-8 ml-2">
-          | {song} 
+          | {song}
         </h3>
         <h3 className="absolute z-20 text-pink-700 w-40 text-base flex justify-center text-center mt-14 ml-2">
           {name} |
         </h3>
-        <div className="absolute  mt-64 z-20 h-10 w-40 ml-4 flex bg-red-400 rounded-full flex items-center justify-center gap-2">
+        <button className="absolute  mt-64 z-20 h-10 w-40 ml-4 flex bg-red-400 rounded-full flex items-center justify-center gap-2">
           <h2>Listen Now</h2>
           <a href="">
             <AiFillPlayCircle />
           </a>
-        </div>
+        </button>
       </div>
       <GiSoundWaves className="text-9xl flex mt-20 ml-4" />
     </div>
